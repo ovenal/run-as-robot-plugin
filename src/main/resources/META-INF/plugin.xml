@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>com.jetbrains</id>
+    <name>Run as Robot</name>
+    <version>0.1</version>
+    <vendor email="aleksey.gruba@gmail.com" url="">Aleksey Gruba</vendor>
+
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.python</depends>
+
+    <actions>
+        <action id="RunAsRobotAction" class="com.github.ovenal.robotrunner.RunAsRobotAction"
+          text="Run As Robot" description="run robot test">
+          <add-to-group group-id="EditorPopupMenu.Run" anchor="last"/>
+          <!--<keyboard-shortcut keymap="$default" first-keystroke="shift meta R" second-keystroke="shift meta P"/>-->
+        </action>
+        <action id="DebugAsRobotAction" class="com.github.ovenal.robotrunner.RunAsRobotAction"
+          text="Debug As Robot" description="debug robot test">
+          <add-to-group group-id="EditorPopupMenu.Run" anchor="last"/>
+          <!--<keyboard-shortcut keymap="$default" first-keystroke="shift meta R" second-keystroke="shift meta P"/>-->
+        </action>
+    </actions>
+
+</idea-plugin>
